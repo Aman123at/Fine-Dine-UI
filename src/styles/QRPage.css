@@ -1,0 +1,37 @@
+.qr-reader{
+    width: 500px !important;
+    height: 500px !important;
+} 
+
+.qr_main{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.qr_title{
+    text-align: center;
+}
+
+.qr_subtitle{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.qr_title_div{
+    margin-bottom: 20px;
+}
+
+.qr_reader_div{
+    display: flex;
+    justify-content: center;
+}
+
+.success_icon{
+    color: green !important;
+    text-align: center !important;
+    
+}
+
+.icons{
+    margin-right: 25px !important;
+}
