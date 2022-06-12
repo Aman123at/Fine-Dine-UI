@@ -47,7 +47,7 @@ function Header() {
           >
             
           </Nav>
-            <IconButton aria-label="cart">
+            <IconButton aria-label="cart" onClick={()=>navigate('/cart')}>
     <StyledBadge badgeContent={4} color="secondary">
         <ShoppingCartIcon className='icons'/>
     </StyledBadge>

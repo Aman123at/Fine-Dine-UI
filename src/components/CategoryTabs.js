@@ -43,6 +43,7 @@ function a11yProps(index) {
 }
 
 const CategoryTabs = ({data,items}) => {
+  console.log(items)
   const [value, setValue] = React.useState(0);
   
   

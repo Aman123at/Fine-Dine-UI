@@ -10,6 +10,9 @@ import '../styles/CardItems.css'
 export default function CardItems({data}) {
   console.log(data)
   const [quantity,setQuantity] = React.useState(1)
+  const handleAddItems=()=>{
+
+  }
   
   
   return (
@@ -32,10 +35,10 @@ export default function CardItems({data}) {
           species, ranging across all continents except Antarctica
         </Typography> */}
       </CardContent>
-        <p className='itemcount' ><span onClick={()=>setQuantity(quantity>0 ?quantity-1 : 0)} >-</span > {quantity} <span onClick={()=>{setQuantity(quantity + 1)}}>+</span></p>
+        <p className='itemcount' ><span onClick={()=>setQuantity(quantity>1 ?quantity-1 : 1)} >-</span > {quantity} <span onClick={()=>{setQuantity(quantity + 1)}}>+</span></p>
       <CardActions>
-        <Button size="small"> ₹ {val.price}</Button>
-        <Button size="small">Add Item</Button>
+        <Button size="small"> ₹ {val.price*quantity}</Button>
+        <Button size="small" onClick={handleAddItems}>Add Item</Button>
 
       </CardActions>
     </Card>
